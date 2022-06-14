@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  line-height: 0.7rem;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+header {
+  z-index: 1000;
+}
+.option {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+.option h3 {
+  margin-bottom: 0.5rem;
+}
+.option input {
+  margin-right: 0.5rem;
+}
+.button {
+  vertical-align: middle;
+}
+.divider {
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 0.1rem solid black;
+  height: 4rem;
+}
+#download {
+  background-color: greenyellow;
+}
+
+#canvas {
+  position: relative;
+  border: 0.1rem solid black;
+  cursor: none;
+}
+
+#cursor_svg {
+  pointer-events: none;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  z-index: 1000;
+  visibility: hidden;
+}

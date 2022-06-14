@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="icon.png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Draw-Me</title>
+</head>
+
+<body>
+  <header>
+    <div class="option">
+      <h3>Size</h3>
+      <label for="width_picker">Width:</label>
+      <input id="width_picker" type="number" value="800" min="100" max="1200" />
+      <label for="height_picker">Height:</label>
+      <input id="height_picker" type="number" value="800" min="100" max="1200" />
+    </div>
+    <div class="divider"></div>
+    <div class="option">
+      <h3>Brush</h3>
+      <label for="radius_picker">Radius:</label>
+      <input id="radius_picker" type="number" value="5" min="1" max="100" />
+      <label for="color_picker">Color: </label>
+      <input id="color_picker" type="color" value="black" />
+    </div>
+    <div class="divider"></div>
+    <div class="option button">
+      <button id="clear">Clear</button>
+    </div>
+    <div class="option button">
+      <button id="download"><b>Download</b></button>
+    </div>
+  </header>
+
+  <!-- Cursor -->
+  <svg id="cursor_svg" height="12" width="12">
+    <circle id="cursor_circle" cx="5.5" cy="5.5" r="5" stroke="gray" stroke-width="1" fill="black"></circle>
+  </svg>
+
+  <!-- Canvas -->
+  <canvas id="canvas"></canvas>
+  <script src="canvas.js"></script>
+</body>
+
+</html>
